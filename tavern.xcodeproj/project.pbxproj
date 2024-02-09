@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D8ED46C2B76A358005542A4 /* tavernApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8ED46B2B76A358005542A4 /* tavernApp.swift */; };
+		6D8ED46E2B76A358005542A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8ED46D2B76A358005542A4 /* ContentView.swift */; };
+		6D8ED4702B76A359005542A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D8ED46F2B76A359005542A4 /* Assets.xcassets */; };
+		6D8ED4742B76A359005542A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D8ED4732B76A359005542A4 /* Preview Assets.xcassets */; };
+		6D8ED47E2B76A35A005542A4 /* tavernTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8ED47D2B76A35A005542A4 /* tavernTests.swift */; };
+		6D8ED4882B76A35A005542A4 /* tavernUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8ED4872B76A35A005542A4 /* tavernUITests.swift */; };
+		6D8ED48A2B76A35A005542A4 /* tavernUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8ED4892B76A35A005542A4 /* tavernUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D8ED47A2B76A35A005542A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D8ED4602B76A358005542A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D8ED4672B76A358005542A4;
+			remoteInfo = tavern;
+		};
+		6D8ED4842B76A35A005542A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D8ED4602B76A358005542A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D8ED4672B76A358005542A4;
+			remoteInfo = tavern;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D8ED4682B76A358005542A4 /* tavern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tavern.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8ED46B2B76A358005542A4 /* tavernApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tavernApp.swift; sourceTree = "<group>"; };
+		6D8ED46D2B76A358005542A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D8ED46F2B76A359005542A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D8ED4712B76A359005542A4 /* tavern.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tavern.entitlements; sourceTree = "<group>"; };
+		6D8ED4732B76A359005542A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D8ED4792B76A35A005542A4 /* tavernTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tavernTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8ED47D2B76A35A005542A4 /* tavernTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tavernTests.swift; sourceTree = "<group>"; };
+		6D8ED4832B76A35A005542A4 /* tavernUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tavernUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8ED4872B76A35A005542A4 /* tavernUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tavernUITests.swift; sourceTree = "<group>"; };
+		6D8ED4892B76A35A005542A4 /* tavernUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tavernUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D8ED4652B76A358005542A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8ED4762B76A35A005542A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8ED4802B76A35A005542A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D8ED45F2B76A358005542A4 = {
+			isa = PBXGroup;
+			children = (
+				6D8ED46A2B76A358005542A4 /* tavern */,
+				6D8ED47C2B76A35A005542A4 /* tavernTests */,
+				6D8ED4862B76A35A005542A4 /* tavernUITests */,
+				6D8ED4692B76A358005542A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D8ED4692B76A358005542A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D8ED4682B76A358005542A4 /* tavern.app */,
+				6D8ED4792B76A35A005542A4 /* tavernTests.xctest */,
+				6D8ED4832B76A35A005542A4 /* tavernUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D8ED46A2B76A358005542A4 /* tavern */ = {
+			isa = PBXGroup;
+			children = (
+				6D8ED46B2B76A358005542A4 /* tavernApp.swift */,
+				6D8ED46D2B76A358005542A4 /* ContentView.swift */,
+				6D8ED46F2B76A359005542A4 /* Assets.xcassets */,
+				6D8ED4712B76A359005542A4 /* tavern.entitlements */,
+				6D8ED4722B76A359005542A4 /* Preview Content */,
+			);
+			path = tavern;
+			sourceTree = "<group>";
+		};
+		6D8ED4722B76A359005542A4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6D8ED4732B76A359005542A4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D8ED47C2B76A35A005542A4 /* tavernTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D8ED47D2B76A35A005542A4 /* tavernTests.swift */,
+			);
+			path = tavernTests;
+			sourceTree = "<group>";
+		};
+		6D8ED4862B76A35A005542A4 /* tavernUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D8ED4872B76A35A005542A4 /* tavernUITests.swift */,
+				6D8ED4892B76A35A005542A4 /* tavernUITestsLaunchTests.swift */,
+			);
+			path = tavernUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D8ED4672B76A358005542A4 /* tavern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D8ED48D2B76A35A005542A4 /* Build configuration list for PBXNativeTarget "tavern" */;
+			buildPhases = (
+				6D8ED4642B76A358005542A4 /* Sources */,
+				6D8ED4652B76A358005542A4 /* Frameworks */,
+				6D8ED4662B76A358005542A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tavern;
+			productName = tavern;
+			productReference = 6D8ED4682B76A358005542A4 /* tavern.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D8ED4782B76A35A005542A4 /* tavernTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D8ED4902B76A35A005542A4 /* Build configuration list for PBXNativeTarget "tavernTests" */;
+			buildPhases = (
+				6D8ED4752B76A35A005542A4 /* Sources */,
+				6D8ED4762B76A35A005542A4 /* Frameworks */,
+				6D8ED4772B76A35A005542A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D8ED47B2B76A35A005542A4 /* PBXTargetDependency */,
+			);
+			name = tavernTests;
+			productName = tavernTests;
+			productReference = 6D8ED4792B76A35A005542A4 /* tavernTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D8ED4822B76A35A005542A4 /* tavernUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D8ED4932B76A35A005542A4 /* Build configuration list for PBXNativeTarget "tavernUITests" */;
+			buildPhases = (
+				6D8ED47F2B76A35A005542A4 /* Sources */,
+				6D8ED4802B76A35A005542A4 /* Frameworks */,
+				6D8ED4812B76A35A005542A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D8ED4852B76A35A005542A4 /* PBXTargetDependency */,
+			);
+			name = tavernUITests;
+			productName = tavernUITests;
+			productReference = 6D8ED4832B76A35A005542A4 /* tavernUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D8ED4602B76A358005542A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					6D8ED4672B76A358005542A4 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					6D8ED4782B76A35A005542A4 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 6D8ED4672B76A358005542A4;
+					};
+					6D8ED4822B76A35A005542A4 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 6D8ED4672B76A358005542A4;
+					};
+				};
+			};
+			buildConfigurationList = 6D8ED4632B76A358005542A4 /* Build configuration list for PBXProject "tavern" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D8ED45F2B76A358005542A4;
+			productRefGroup = 6D8ED4692B76A358005542A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D8ED4672B76A358005542A4 /* tavern */,
+				6D8ED4782B76A35A005542A4 /* tavernTests */,
+				6D8ED4822B76A35A005542A4 /* tavernUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D8ED4662B76A358005542A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8ED4742B76A359005542A4 /* Preview Assets.xcassets in Resources */,
+				6D8ED4702B76A359005542A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8ED4772B76A35A005542A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8ED4812B76A35A005542A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D8ED4642B76A358005542A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8ED46E2B76A358005542A4 /* ContentView.swift in Sources */,
+				6D8ED46C2B76A358005542A4 /* tavernApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8ED4752B76A35A005542A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8ED47E2B76A35A005542A4 /* tavernTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8ED47F2B76A35A005542A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8ED48A2B76A35A005542A4 /* tavernUITestsLaunchTests.swift in Sources */,
+				6D8ED4882B76A35A005542A4 /* tavernUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D8ED47B2B76A35A005542A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D8ED4672B76A358005542A4 /* tavern */;
+			targetProxy = 6D8ED47A2B76A35A005542A4 /* PBXContainerItemProxy */;
+		};
+		6D8ED4852B76A35A005542A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D8ED4672B76A358005542A4 /* tavern */;
+			targetProxy = 6D8ED4842B76A35A005542A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6D8ED48B2B76A35A005542A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D8ED48C2B76A35A005542A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6D8ED48E2B76A35A005542A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = tavern/tavern.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tavern/Preview Content\"";
+				DEVELOPMENT_TEAM = 4J3EYCBFQ4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.tavernofazoth.tavern;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D8ED48F2B76A35A005542A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = tavern/tavern.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tavern/Preview Content\"";
+				DEVELOPMENT_TEAM = 4J3EYCBFQ4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.tavernofazoth.tavern;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D8ED4912B76A35A005542A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4J3EYCBFQ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.tavernofazoth.tavernTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tavern.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tavern";
+			};
+			name = Debug;
+		};
+		6D8ED4922B76A35A005542A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4J3EYCBFQ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.tavernofazoth.tavernTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tavern.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tavern";
+			};
+			name = Release;
+		};
+		6D8ED4942B76A35A005542A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4J3EYCBFQ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.tavernofazoth.tavernUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tavern;
+			};
+			name = Debug;
+		};
+		6D8ED4952B76A35A005542A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4J3EYCBFQ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.tavernofazoth.tavernUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tavern;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D8ED4632B76A358005542A4 /* Build configuration list for PBXProject "tavern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D8ED48B2B76A35A005542A4 /* Debug */,
+				6D8ED48C2B76A35A005542A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D8ED48D2B76A35A005542A4 /* Build configuration list for PBXNativeTarget "tavern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D8ED48E2B76A35A005542A4 /* Debug */,
+				6D8ED48F2B76A35A005542A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D8ED4902B76A35A005542A4 /* Build configuration list for PBXNativeTarget "tavernTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D8ED4912B76A35A005542A4 /* Debug */,
+				6D8ED4922B76A35A005542A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D8ED4932B76A35A005542A4 /* Build configuration list for PBXNativeTarget "tavernUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D8ED4942B76A35A005542A4 /* Debug */,
+				6D8ED4952B76A35A005542A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D8ED4602B76A358005542A4 /* Project object */;
+}
