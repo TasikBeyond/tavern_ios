@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 import ClientApi
+import Sentry
 
 class SearchViewModel: ObservableObject {
   @Published var searchText = ""

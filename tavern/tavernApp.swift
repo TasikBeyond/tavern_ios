@@ -1,8 +1,11 @@
 import SwiftUI
+import Sentry
+
 
 @main
 struct tavernApp: App {
-  
+  @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
   init() {
     UITableView.appearance().backgroundColor = .clear
   }
