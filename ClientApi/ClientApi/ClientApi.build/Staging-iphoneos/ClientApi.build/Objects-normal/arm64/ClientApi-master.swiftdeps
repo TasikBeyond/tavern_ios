@@ -1,0 +1,14 @@
+version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
+options: "93ccb0c233f654c0824ccbe20431dd9421d00f35c1f23671a9e228c2ed4f03d2"
+build_start_time: [1667745982, 884931087]
+build_end_time: [1667745985, 251141071]
+inputs:
+  "/Users/bdemeria/Desktop/Projects/dreamscribe_ios/ClientApi/ClientApi/Api/Init/ClinicsApi.swift": [1667744631, 387125015]
+  "/Users/bdemeria/Desktop/Projects/dreamscribe_ios/ClientApi/ClientApi/Pigeon/ApiError.swift": [1667744843, 624981403]
+  "/Users/bdemeria/Desktop/Projects/dreamscribe_ios/ClientApi/ClientApi/Pigeon/Date+Pigeon.swift": [1667744828, 385544300]
+  "/Users/bdemeria/Desktop/Projects/dreamscribe_ios/ClientApi/ClientApi/Pigeon/Endpoints+Pigeon.swift": [1667745597, 899448633]
+  "/Users/bdemeria/Desktop/Projects/dreamscribe_ios/ClientApi/ClientApi/Pigeon/Enum+Pigeon.swift": [1667744837, 847824096]
+  "/Users/bdemeria/Desktop/Projects/dreamscribe_ios/ClientApi/ClientApi/Pigeon/Pigeon.swift": [1667744720, 810636758]
+  "/Users/bdemeria/Desktop/Projects/dreamscribe_ios/ClientApi/ClientApi/ResponseModels/Init/ClinicListModel.swift": [1667744634, 411041975]
+  "/Users/bdemeria/Desktop/Projects/dreamscribe_ios/ClientApi/ClientApi/ResponseModels/Init/ClinicModel.swift": [1667744762, 210668087]
+  "/Users/bdemeria/Desktop/Projects/dreamscribe_ios/ClientApi/ClientApi/ResponseModels/Init/ClinicsModel.swift": [1667744754, 699753284]

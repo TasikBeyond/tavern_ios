@@ -1,0 +1,10 @@
+framework module ClientApi {
+  umbrella header "ClientApi.h"
+
+  export *
+  module * { export * }
+}
+
+module ClientApi.__Swift {
+  exclude header "ClientApi-Swift.h"
+}

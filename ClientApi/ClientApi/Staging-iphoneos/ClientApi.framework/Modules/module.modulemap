@@ -1,0 +1,11 @@
+framework module ClientApi {
+  umbrella header "ClientApi.h"
+
+  export *
+  module * { export * }
+}
+
+module ClientApi.Swift {
+  header "ClientApi-Swift.h"
+  requires objc
+}

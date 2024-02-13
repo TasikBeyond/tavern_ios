@@ -1,24 +1,29 @@
-//
-//  ContentView.swift
-//  tavern
-//
-//  Created by Brandon Demeria on 2024-02-09.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+  @State private var shouldNavigateToSearchView = false
+
+  var body: some View {
+    NavigationStack {
+      VStack {
+        Image(systemName: "globe")
+          .imageScale(.large)
+          .foregroundStyle(.tint)
+        Text("Hello, world!")
+        Button("Go to Search") {
+          shouldNavigateToSearchView = true
         }
-        .padding()
+      }
+      .padding()
+      .navigationDestination(isPresented: $shouldNavigateToSearchView) {
+        LazyView(SearchView(viewModel: SearchViewModel()))
+      }
+      .navigationBarTitleDisplayMode(.inline)
+      .navigationTitle("Main")
     }
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }

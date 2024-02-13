@@ -1,0 +1,14 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/bdemeria/Desktop/Projects/dreamscribe_ios/ClientApi/ClientApi/Staging-iphoneos/ClientApi.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/bdemeria/Desktop/Projects/dreamscribe_ios/ClientApi/ClientApi/ClientApi.build/Staging-iphoneos/ClientApi.build/unextended-module.modulemap",
+    }]
+  }]
+}

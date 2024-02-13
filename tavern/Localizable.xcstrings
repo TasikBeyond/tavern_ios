@@ -1,0 +1,54 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Challenge Rating: %@" : {
+      "comment" : "SearchView",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Challenge Rating: %@"
+          }
+        }
+      }
+    },
+    "Go to Search" : {
+
+    },
+    "Hello, world!" : {
+
+    },
+    "Hit Points: %@" : {
+
+    },
+    "Main" : {
+
+    },
+    "Search" : {
+      "comment" : "SearchView",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        }
+      }
+    },
+    "Search..." : {
+      "comment" : "SearchBar",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search..."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
