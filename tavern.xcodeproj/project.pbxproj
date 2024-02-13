@@ -15,6 +15,8 @@
 		6D39A6662B7BDAFC004881CB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A6652B7BDAFC004881CB /* Theme.swift */; };
 		6D39A6682B7BDBF1004881CB /* Color+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A6672B7BDBF1004881CB /* Color+SwiftUI.swift */; };
 		6D39A66B2B7BE66A004881CB /* SearchCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A66A2B7BE66A004881CB /* SearchCellView.swift */; };
+		6D39A66E2B7BFB3F004881CB /* CreatureDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A66D2B7BFB3F004881CB /* CreatureDetailsView.swift */; };
+		6D6EC7332B7C12AF009DE49E /* CreatureDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC7322B7C12AF009DE49E /* CreatureDetailsViewModel.swift */; };
 		6D8ED46C2B76A358005542A4 /* tavernApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8ED46B2B76A358005542A4 /* tavernApp.swift */; };
 		6D8ED46E2B76A358005542A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8ED46D2B76A358005542A4 /* ContentView.swift */; };
 		6D8ED4702B76A359005542A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D8ED46F2B76A359005542A4 /* Assets.xcassets */; };
@@ -56,6 +58,8 @@
 		6D39A6652B7BDAFC004881CB /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		6D39A6672B7BDBF1004881CB /* Color+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+SwiftUI.swift"; sourceTree = "<group>"; };
 		6D39A66A2B7BE66A004881CB /* SearchCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellView.swift; sourceTree = "<group>"; };
+		6D39A66D2B7BFB3F004881CB /* CreatureDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsView.swift; sourceTree = "<group>"; };
+		6D6EC7322B7C12AF009DE49E /* CreatureDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsViewModel.swift; sourceTree = "<group>"; };
 		6D8ED4682B76A358005542A4 /* tavern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tavern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8ED46B2B76A358005542A4 /* tavernApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tavernApp.swift; sourceTree = "<group>"; };
 		6D8ED46D2B76A358005542A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +156,30 @@
 			path = search;
 			sourceTree = "<group>";
 		};
+		6D39A66C2B7BFB31004881CB /* creatures */ = {
+			isa = PBXGroup;
+			children = (
+				6D39A66D2B7BFB3F004881CB /* CreatureDetailsView.swift */,
+			);
+			path = creatures;
+			sourceTree = "<group>";
+		};
+		6D6EC72F2B7C11A4009DE49E /* search */ = {
+			isa = PBXGroup;
+			children = (
+				6D8ED49B2B76B4F0005542A4 /* SearchViewModel.swift */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		6D6EC7302B7C11AD009DE49E /* creatures */ = {
+			isa = PBXGroup;
+			children = (
+				6D6EC7322B7C12AF009DE49E /* CreatureDetailsViewModel.swift */,
+			);
+			path = creatures;
+			sourceTree = "<group>";
+		};
 		6D8ED45F2B76A358005542A4 = {
 			isa = PBXGroup;
 			children = (
@@ -222,7 +250,8 @@
 		6D8ED4972B76A853005542A4 /* viewmodels */ = {
 			isa = PBXGroup;
 			children = (
-				6D8ED49B2B76B4F0005542A4 /* SearchViewModel.swift */,
+				6D6EC7302B7C11AD009DE49E /* creatures */,
+				6D6EC72F2B7C11A4009DE49E /* search */,
 			);
 			path = viewmodels;
 			sourceTree = "<group>";
@@ -230,6 +259,7 @@
 		6D8ED4982B76A863005542A4 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				6D39A66C2B7BFB31004881CB /* creatures */,
 				6D39A6692B7BE657004881CB /* search */,
 				6D8ED4992B76A86F005542A4 /* components */,
 			);
@@ -414,6 +444,8 @@
 				6D39A66B2B7BE66A004881CB /* SearchCellView.swift in Sources */,
 				6D8ED49C2B76B4F0005542A4 /* SearchViewModel.swift in Sources */,
 				6D39A65D2B7BC44A004881CB /* URL+ImageResolution.swift in Sources */,
+				6D39A66E2B7BFB3F004881CB /* CreatureDetailsView.swift in Sources */,
+				6D6EC7332B7C12AF009DE49E /* CreatureDetailsViewModel.swift in Sources */,
 				6D39A6682B7BDBF1004881CB /* Color+SwiftUI.swift in Sources */,
 				6D8ED46E2B76A358005542A4 /* ContentView.swift in Sources */,
 				6D8ED4A02B76BF01005542A4 /* SearchBar.swift in Sources */,

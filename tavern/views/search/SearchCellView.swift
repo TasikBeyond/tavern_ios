@@ -34,8 +34,15 @@ struct SearchCellView: View {
         .foregroundColor(Theme.orange600)
         .padding(.top, 4)
       }
+      .frame(
+        minWidth: 0,
+        maxWidth: .infinity,
+        minHeight: 0,
+        maxHeight: .infinity,
+        alignment: .topLeading
+      )
     }
+    .background(.black) //Theme.Blue600 to see the content view
     .padding(.vertical, 5)
-    .background(Theme.gray950)
   }
 }

@@ -6,22 +6,31 @@ struct SearchView: View {
   
   var body: some View {
     NavigationView {
-      VStack(spacing: 0) {
+      VStack(spacing: 10) {
         SearchBar(text: $searchText.onChange(performSearch))
-          .padding([.leading, .trailing], 10)
           .background(Theme.gray950)
+          .padding([.leading, .trailing, .top], 10)
         
         List(viewModel.compendiumResults) { item in
-          SearchCellView(item: item)
-            .listRowBackground(Theme.gray950)
+          ZStack {
+            SearchCellView(item: item)
+              .listRowBackground(Color.black)
+              .padding(.horizontal, 4)
+            NavigationLink(destination: LazyView(
+              CreatureDetailsView(viewModel: CreatureDetailsViewModel(content: item)))
+            ) {
+              EmptyView()
+            }
+            .opacity(0)
+            .buttonStyle(PlainButtonStyle())
+          }
+          .background(.black)
+          .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
         }
-        .listStyle(PlainListStyle())
-        .padding(.all, 0)
-        .background(Theme.gray950)
       }
+      .listStyle(.grouped)
     }
     .navigationTitle("Search")
-    .toolbarBackground(Theme.gray950)
     .toolbarColorScheme(.dark, for: .navigationBar)
     .toolbarBackground(.visible)
     .toolbarColorScheme(.dark)
