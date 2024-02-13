@@ -6,7 +6,8 @@ struct SearchBar: View {
   var body: some View {
     TextField("Search...", text: $text)
       .padding(7)
-      .background(Color(.systemGray6))
+      .background(Theme.gray900)
+      .foregroundColor(Theme.gray50)
       .cornerRadius(8)
       .frame(maxWidth: .infinity)
   }
