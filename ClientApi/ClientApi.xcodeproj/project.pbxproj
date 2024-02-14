@@ -16,6 +16,8 @@
 		6D6EC73A2B7C16BC009DE49E /* CreatureIdentityResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC7392B7C16BC009DE49E /* CreatureIdentityResponseModel.swift */; };
 		6D6EC73D2B7C174A009DE49E /* CreatureAttributeResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC73C2B7C174A009DE49E /* CreatureAttributeResponseModel.swift */; };
 		6D6EC73F2B7C18CB009DE49E /* CreatureApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC73E2B7C18CB009DE49E /* CreatureApi.swift */; };
+		6D6EC75B2B7D61AB009DE49E /* CreatureMainResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC75A2B7D61AB009DE49E /* CreatureMainResponseModel.swift */; };
+		6D6EC7602B7D6435009DE49E /* CreatureActionResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC75F2B7D6435009DE49E /* CreatureActionResponseModel.swift */; };
 		CA1FCECE2466069D00D561CB /* Enum+Pigeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1FCECD2466069D00D561CB /* Enum+Pigeon.swift */; };
 		CAE1A02B24658B0C0047A6B4 /* ClientApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE1A02124658B0C0047A6B4 /* ClientApi.framework */; };
 		CAE1A03024658B0C0047A6B4 /* ClientApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A02F24658B0C0047A6B4 /* ClientApiTests.swift */; };
@@ -47,6 +49,8 @@
 		6D6EC7392B7C16BC009DE49E /* CreatureIdentityResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureIdentityResponseModel.swift; sourceTree = "<group>"; };
 		6D6EC73C2B7C174A009DE49E /* CreatureAttributeResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureAttributeResponseModel.swift; sourceTree = "<group>"; };
 		6D6EC73E2B7C18CB009DE49E /* CreatureApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureApi.swift; sourceTree = "<group>"; };
+		6D6EC75A2B7D61AB009DE49E /* CreatureMainResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureMainResponseModel.swift; sourceTree = "<group>"; };
+		6D6EC75F2B7D6435009DE49E /* CreatureActionResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureActionResponseModel.swift; sourceTree = "<group>"; };
 		CA1FCECD2466069D00D561CB /* Enum+Pigeon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum+Pigeon.swift"; sourceTree = "<group>"; };
 		CAE1A02124658B0C0047A6B4 /* ClientApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ClientApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE1A02424658B0C0047A6B4 /* ClientApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientApi.h; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				6D6EC7372B7C1641009DE49E /* CreatureResponseModel.swift */,
 				6D6EC7392B7C16BC009DE49E /* CreatureIdentityResponseModel.swift */,
 				6D6EC73C2B7C174A009DE49E /* CreatureAttributeResponseModel.swift */,
+				6D6EC75A2B7D61AB009DE49E /* CreatureMainResponseModel.swift */,
+				6D6EC75F2B7D6435009DE49E /* CreatureActionResponseModel.swift */,
 			);
 			path = Creatures;
 			sourceTree = "<group>";
@@ -330,10 +336,12 @@
 				6D6EC73F2B7C18CB009DE49E /* CreatureApi.swift in Sources */,
 				6D39A65A2B7ABFE3004881CB /* CompendiumSearchRequest.swift in Sources */,
 				CA1FCECE2466069D00D561CB /* Enum+Pigeon.swift in Sources */,
+				6D6EC75B2B7D61AB009DE49E /* CreatureMainResponseModel.swift in Sources */,
 				6D39A64E2B76CEFD004881CB /* CompendiumApi.swift in Sources */,
 				6D39A6472B76CC6F004881CB /* CompendiumContentResponseModel.swift in Sources */,
 				6D6EC73D2B7C174A009DE49E /* CreatureAttributeResponseModel.swift in Sources */,
 				6D6EC73A2B7C16BC009DE49E /* CreatureIdentityResponseModel.swift in Sources */,
+				6D6EC7602B7D6435009DE49E /* CreatureActionResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,11 @@
 		6D6EC74E2B7C2E26009DE49E /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D6EC74D2B7C2E26009DE49E /* secrets.plist */; };
 		6D6EC7512B7C2F96009DE49E /* loading-circle.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D6EC7502B7C2F96009DE49E /* loading-circle.json */; };
 		6D6EC7532B7C2FC5009DE49E /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC7522B7C2FC5009DE49E /* LottieView.swift */; };
+		6D6EC7552B7D5441009DE49E /* CreatureDetailsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC7542B7D5441009DE49E /* CreatureDetailsInfoView.swift */; };
+		6D6EC7572B7D57FC009DE49E /* CreatureDetailsPortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC7562B7D57FC009DE49E /* CreatureDetailsPortraitView.swift */; };
+		6D6EC7592B7D5A22009DE49E /* CreatureDetailsAttributesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC7582B7D5A22009DE49E /* CreatureDetailsAttributesView.swift */; };
+		6D6EC75D2B7D62D9009DE49E /* CreatureDetailsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC75C2B7D62D9009DE49E /* CreatureDetailsMainView.swift */; };
+		6D6EC7622B7D64F9009DE49E /* CreatureDetailsActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC7612B7D64F9009DE49E /* CreatureDetailsActionsView.swift */; };
 		6D8ED46C2B76A358005542A4 /* tavernApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8ED46B2B76A358005542A4 /* tavernApp.swift */; };
 		6D8ED46E2B76A358005542A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8ED46D2B76A358005542A4 /* ContentView.swift */; };
 		6D8ED4702B76A359005542A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D8ED46F2B76A359005542A4 /* Assets.xcassets */; };
@@ -68,6 +73,11 @@
 		6D6EC74D2B7C2E26009DE49E /* secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = secrets.plist; sourceTree = "<group>"; };
 		6D6EC7502B7C2F96009DE49E /* loading-circle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "loading-circle.json"; sourceTree = "<group>"; };
 		6D6EC7522B7C2FC5009DE49E /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		6D6EC7542B7D5441009DE49E /* CreatureDetailsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsInfoView.swift; sourceTree = "<group>"; };
+		6D6EC7562B7D57FC009DE49E /* CreatureDetailsPortraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsPortraitView.swift; sourceTree = "<group>"; };
+		6D6EC7582B7D5A22009DE49E /* CreatureDetailsAttributesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsAttributesView.swift; sourceTree = "<group>"; };
+		6D6EC75C2B7D62D9009DE49E /* CreatureDetailsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsMainView.swift; sourceTree = "<group>"; };
+		6D6EC7612B7D64F9009DE49E /* CreatureDetailsActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsActionsView.swift; sourceTree = "<group>"; };
 		6D8ED4682B76A358005542A4 /* tavern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tavern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8ED46B2B76A358005542A4 /* tavernApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tavernApp.swift; sourceTree = "<group>"; };
 		6D8ED46D2B76A358005542A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -169,6 +179,11 @@
 			isa = PBXGroup;
 			children = (
 				6D39A66D2B7BFB3F004881CB /* CreatureDetailsView.swift */,
+				6D6EC7542B7D5441009DE49E /* CreatureDetailsInfoView.swift */,
+				6D6EC75C2B7D62D9009DE49E /* CreatureDetailsMainView.swift */,
+				6D6EC7582B7D5A22009DE49E /* CreatureDetailsAttributesView.swift */,
+				6D6EC7562B7D57FC009DE49E /* CreatureDetailsPortraitView.swift */,
+				6D6EC7612B7D64F9009DE49E /* CreatureDetailsActionsView.swift */,
 			);
 			path = creatures;
 			sourceTree = "<group>";
@@ -473,7 +488,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This script is responsable to upload debug symbols and source context for Sentry.\nif which sentry-cli >/dev/null; then\nexport SENTRY_ORG=liquidfire-entertainment\nexport SENTRY_PROJECT=tavern-ios\nERROR=$(sentry-cli debug-files upload --include-sources \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
+			shellScript = "# This script is responsable to upload debug symbols and source context for Sentry.\n# if which sentry-cli >/dev/null; then\n# export SENTRY_ORG=liquidfire-entertainment\n# export SENTRY_PROJECT=tavern-ios\n# ERROR=$(sentry-cli debug-files upload --include-sources \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\n# if [ ! $? -eq 0 ]; then\n# echo \"warning: sentry-cli - $ERROR\"\n# fi\n# else\n# echo \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\n# fi\n";
 		};
 		FFF87911BC34CD6BEB6362AC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -504,12 +519,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6EC7622B7D64F9009DE49E /* CreatureDetailsActionsView.swift in Sources */,
+				6D6EC7552B7D5441009DE49E /* CreatureDetailsInfoView.swift in Sources */,
 				6D39A6662B7BDAFC004881CB /* Theme.swift in Sources */,
 				6D39A66B2B7BE66A004881CB /* SearchCellView.swift in Sources */,
 				6D6EC7532B7C2FC5009DE49E /* LottieView.swift in Sources */,
 				6D8ED49C2B76B4F0005542A4 /* SearchViewModel.swift in Sources */,
+				6D6EC75D2B7D62D9009DE49E /* CreatureDetailsMainView.swift in Sources */,
 				6D39A65D2B7BC44A004881CB /* URL+ImageResolution.swift in Sources */,
 				6D6EC74B2B7C2DE2009DE49E /* AppDelegate.swift in Sources */,
+				6D6EC7572B7D57FC009DE49E /* CreatureDetailsPortraitView.swift in Sources */,
 				6D39A66E2B7BFB3F004881CB /* CreatureDetailsView.swift in Sources */,
 				6D6EC7332B7C12AF009DE49E /* CreatureDetailsViewModel.swift in Sources */,
 				6D39A6682B7BDBF1004881CB /* Color+SwiftUI.swift in Sources */,
@@ -517,6 +536,7 @@
 				6D8ED4A02B76BF01005542A4 /* SearchBar.swift in Sources */,
 				6D39A6512B7A8658004881CB /* SearchService.swift in Sources */,
 				6D8ED49E2B76B525005542A4 /* SearchView.swift in Sources */,
+				6D6EC7592B7D5A22009DE49E /* CreatureDetailsAttributesView.swift in Sources */,
 				6D8ED46C2B76A358005542A4 /* tavernApp.swift in Sources */,
 				6D39A6572B7A99B4004881CB /* LazyView.swift in Sources */,
 			);

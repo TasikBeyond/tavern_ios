@@ -1,6 +1,12 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "AC: %@" : {
+
+    },
+    "Alignment: %@" : {
+
+    },
     "Challenge Rating: %@" : {
       "comment" : "SearchView",
       "extractionState" : "manual",
@@ -13,6 +19,9 @@
         }
       }
     },
+    "Class: %@" : {
+
+    },
     "Go to Search" : {
 
     },
@@ -22,7 +31,16 @@
     "Hit Points: %@" : {
 
     },
+    "HP: %@" : {
+
+    },
     "Main" : {
+
+    },
+    "No Image Available" : {
+
+    },
+    "Race: %@" : {
 
     },
     "Search" : {

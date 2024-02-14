@@ -5,6 +5,8 @@ import ClientApi
 class CreatureDetailsViewModel: ObservableObject {
   @Published var content: CompendiumContentResponseModel
   @Published var creature: CreatureResponseModel?
+  @Published var isLoading = false
+
   
   private var cancellables = Set<AnyCancellable>()
   
@@ -14,10 +16,17 @@ class CreatureDetailsViewModel: ObservableObject {
   }
   
   private func fetchCreature(creatureId: UUID) {
+    self.isLoading = true
     Pigeon.CreatureApi.getCreatureById(creatureId: content.id) { data in
-      self.creature = data;
+      DispatchQueue.main.async {
+        self.creature = data
+        self.isLoading = false
+      }
     } failure: { error in
-      print(error)
+      DispatchQueue.main.async {
+        print(error)
+        self.isLoading = false
+      }
     }
   }
 }

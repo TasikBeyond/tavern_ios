@@ -6,15 +6,26 @@ struct LottieView: UIViewRepresentable {
   var animationFileName: String
   let loopMode: LottieLoopMode
   
-  func updateUIView(_ uiView: UIViewType, context: Context) {
+  func updateUIView(_ uiView: UIViewType, context: UIViewRepresentableContext<LottieView>) {
     
   }
   
-  func makeUIView(context: Context) -> Lottie.LottieAnimationView {
+  func makeUIView(context: UIViewRepresentableContext<LottieView>) -> some UIView {
+    let view = UIView(frame: .zero)
     let animationView = LottieAnimationView(name: animationFileName)
+
     animationView.loopMode = loopMode
     animationView.play()
-    animationView.contentMode = .scaleAspectFill
-    return animationView
+    animationView.contentMode = .scaleAspectFit
+    
+    animationView.translatesAutoresizingMaskIntoConstraints = false
+    view.addSubview(animationView)
+    
+    NSLayoutConstraint.activate([
+      animationView.widthAnchor.constraint(equalTo: view.widthAnchor),
+      animationView.heightAnchor.constraint(equalTo: view.heightAnchor)
+    ])
+    
+    return view
   }
 }
