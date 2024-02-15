@@ -29,5 +29,11 @@ class CreatureDetailsViewModel: ObservableObject {
       }
     }
   }
+  
+  public func creaturePdfUrl() -> URL {
+    let host = Pigeon.shared.host ?? "https://tavernofazoth.com"
+    let url = "\(host)/api/creatures/\(content.id)/pdf"
+    return URL(string: url)!;
+  }
 }
 

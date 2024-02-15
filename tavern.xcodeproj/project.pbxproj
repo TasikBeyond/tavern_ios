@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6D39A6512B7A8658004881CB /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A6502B7A8658004881CB /* SearchService.swift */; };
-		6D39A6532B7A874F004881CB /* ClientApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D39A6522B7A874F004881CB /* ClientApi.framework */; };
 		6D39A6572B7A99B4004881CB /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A6562B7A99B4004881CB /* LazyView.swift */; };
 		6D39A65D2B7BC44A004881CB /* URL+ImageResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A65C2B7BC44A004881CB /* URL+ImageResolution.swift */; };
 		6D39A6632B7BCB63004881CB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6D39A6622B7BCB63004881CB /* Localizable.xcstrings */; };
@@ -26,6 +25,10 @@
 		6D6EC7592B7D5A22009DE49E /* CreatureDetailsAttributesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC7582B7D5A22009DE49E /* CreatureDetailsAttributesView.swift */; };
 		6D6EC75D2B7D62D9009DE49E /* CreatureDetailsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC75C2B7D62D9009DE49E /* CreatureDetailsMainView.swift */; };
 		6D6EC7622B7D64F9009DE49E /* CreatureDetailsActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC7612B7D64F9009DE49E /* CreatureDetailsActionsView.swift */; };
+		6D6EC7642B7E7BE1009DE49E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6EC7632B7E7BE1009DE49E /* Media.xcassets */; };
+		6D6EC78A2B7EA8B7009DE49E /* ClientApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6EC7892B7EA8B7009DE49E /* ClientApi.framework */; };
+		6D6EC78B2B7EA8B7009DE49E /* ClientApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6EC7892B7EA8B7009DE49E /* ClientApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D6EC78D2B7EAC67009DE49E /* PdfWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC78C2B7EAC67009DE49E /* PdfWebView.swift */; };
 		6D8ED46C2B76A358005542A4 /* tavernApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8ED46B2B76A358005542A4 /* tavernApp.swift */; };
 		6D8ED46E2B76A358005542A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8ED46D2B76A358005542A4 /* ContentView.swift */; };
 		6D8ED4702B76A359005542A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D8ED46F2B76A359005542A4 /* Assets.xcassets */; };
@@ -56,10 +59,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6D6EC7862B7EA75F009DE49E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D6EC78B2B7EA8B7009DE49E /* ClientApi.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		61B48D883DFB3B9E6F42720C /* Pods_tavern.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tavern.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D39A6502B7A8658004881CB /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
-		6D39A6522B7A874F004881CB /* ClientApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ClientApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D39A6542B7A8B7E004881CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6D39A6562B7A99B4004881CB /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		6D39A65C2B7BC44A004881CB /* URL+ImageResolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+ImageResolution.swift"; sourceTree = "<group>"; };
@@ -78,6 +94,9 @@
 		6D6EC7582B7D5A22009DE49E /* CreatureDetailsAttributesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsAttributesView.swift; sourceTree = "<group>"; };
 		6D6EC75C2B7D62D9009DE49E /* CreatureDetailsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsMainView.swift; sourceTree = "<group>"; };
 		6D6EC7612B7D64F9009DE49E /* CreatureDetailsActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsActionsView.swift; sourceTree = "<group>"; };
+		6D6EC7632B7E7BE1009DE49E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		6D6EC7892B7EA8B7009DE49E /* ClientApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ClientApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6EC78C2B7EAC67009DE49E /* PdfWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfWebView.swift; sourceTree = "<group>"; };
 		6D8ED4682B76A358005542A4 /* tavern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tavern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8ED46B2B76A358005542A4 /* tavernApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tavernApp.swift; sourceTree = "<group>"; };
 		6D8ED46D2B76A358005542A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D39A6532B7A874F004881CB /* ClientApi.framework in Frameworks */,
+				6D6EC78A2B7EA8B7009DE49E /* ClientApi.framework in Frameworks */,
 				AE4FB87FEBF7D5C883D6BB84 /* Pods_tavern.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,7 +145,7 @@
 		5B714F9CC990EB5A0DA1273E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6D39A6522B7A874F004881CB /* ClientApi.framework */,
+				6D6EC7892B7EA8B7009DE49E /* ClientApi.framework */,
 				61B48D883DFB3B9E6F42720C /* Pods_tavern.framework */,
 			);
 			name = Frameworks;
@@ -162,6 +181,7 @@
 			children = (
 				6D6EC74F2B7C2F64009DE49E /* animations */,
 				6D39A6652B7BDAFC004881CB /* Theme.swift */,
+				6D6EC7632B7E7BE1009DE49E /* Media.xcassets */,
 			);
 			path = design;
 			sourceTree = "<group>";
@@ -313,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				6D8ED49F2B76BF01005542A4 /* SearchBar.swift */,
+				6D6EC78C2B7EAC67009DE49E /* PdfWebView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -337,6 +358,7 @@
 				6D8ED4642B76A358005542A4 /* Sources */,
 				6D8ED4652B76A358005542A4 /* Frameworks */,
 				6D8ED4662B76A358005542A4 /* Resources */,
+				6D6EC7862B7EA75F009DE49E /* Embed Frameworks */,
 				353F7587AC734900BD86DF9B /* Upload Debug Symbols to Sentry */,
 				1F2C00DFF345BC73ADD55EEF /* [CP] Embed Pods Frameworks */,
 			);
@@ -437,6 +459,7 @@
 				6D8ED4742B76A359005542A4 /* Preview Assets.xcassets in Resources */,
 				6D8ED4702B76A359005542A4 /* Assets.xcassets in Resources */,
 				6D39A6632B7BCB63004881CB /* Localizable.xcstrings in Resources */,
+				6D6EC7642B7E7BE1009DE49E /* Media.xcassets in Resources */,
 				6D6EC7512B7C2F96009DE49E /* loading-circle.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +554,7 @@
 				6D6EC7572B7D57FC009DE49E /* CreatureDetailsPortraitView.swift in Sources */,
 				6D39A66E2B7BFB3F004881CB /* CreatureDetailsView.swift in Sources */,
 				6D6EC7332B7C12AF009DE49E /* CreatureDetailsViewModel.swift in Sources */,
+				6D6EC78D2B7EAC67009DE49E /* PdfWebView.swift in Sources */,
 				6D39A6682B7BDBF1004881CB /* Color+SwiftUI.swift in Sources */,
 				6D8ED46E2B76A358005542A4 /* ContentView.swift in Sources */,
 				6D8ED4A02B76BF01005542A4 /* SearchBar.swift in Sources */,
@@ -704,8 +728,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ClientApi/ClientApi/Staging-iphoneos",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tavern/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -716,7 +745,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -746,8 +775,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ClientApi/ClientApi/Staging-iphoneos",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tavern/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -758,7 +792,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;

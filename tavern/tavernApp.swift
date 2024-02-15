@@ -12,9 +12,14 @@ struct tavernApp: App {
   
   var body: some Scene {
     WindowGroup {
-      ContentView()
-        .background(Theme.gray900)
-        .preferredColorScheme(.dark)
+      NavigationStack {
+        SearchView(viewModel: SearchViewModel())
+          .navigationBarTitle(Text("Compendium"))
+      }
+      .toolbarBackground(.black)
+      .toolbarColorScheme(.dark, for: .navigationBar)
+      .background(.black)
+      .preferredColorScheme(.dark)
     }
   }
 }

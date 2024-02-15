@@ -1,4 +1,5 @@
 PODS:
+  - Kingfisher (7.11.0)
   - lottie-ios (4.4.0)
   - Sentry (8.20.0):
     - Sentry/Core (= 8.20.0)
@@ -8,20 +9,23 @@ PODS:
   - SentryPrivate (8.20.0)
 
 DEPENDENCIES:
+  - Kingfisher (~> 7.0)
   - lottie-ios
   - Sentry
 
 SPEC REPOS:
   trunk:
+    - Kingfisher
     - lottie-ios
     - Sentry
     - SentryPrivate
 
 SPEC CHECKSUMS:
+  Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
   lottie-ios: ef1be1f90d54255f08e09d767950e43714661178
   Sentry: a8d7b373b9f9868442b02a0c425192f693103cbf
   SentryPrivate: 006b24af16828441f70e2ab6adf241bd0a8ad130
 
-PODFILE CHECKSUM: 7008db78d45d735d5b969f766119c418eeb01fd7
+PODFILE CHECKSUM: f778878fcef0b3d4bde7d6a2fff53d7244155bb7
 
 COCOAPODS: 1.15.2

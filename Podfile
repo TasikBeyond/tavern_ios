@@ -6,4 +6,5 @@ target 'tavern' do
   use_frameworks!
   pod 'lottie-ios'
   pod 'Sentry'
+  pod 'Kingfisher', '~> 7.0'
 end

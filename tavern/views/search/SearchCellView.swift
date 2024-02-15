@@ -1,5 +1,6 @@
 import SwiftUI
 import ClientApi
+import Kingfisher
 
 struct SearchCellView: View {
   var item: CompendiumContentResponseModel
@@ -7,13 +8,11 @@ struct SearchCellView: View {
   var body: some View {
     HStack(alignment: .top, spacing: 10) {
       if let url = item.illustration.url, let urlString = url.appendingResolution(.small)?.absoluteString {
-        AsyncImage(url: URL(string: urlString)) { image in
-          image.resizable()
-        } placeholder: {
-          Theme.gray400
-        }
-        .frame(width: 80, height: 80)
-        .clipShape(RoundedRectangle(cornerRadius: 10))
+        KFImage(URL(string: urlString))
+          .resizable()
+          .scaledToFit()
+          .frame(width: 80, height: 80)
+          .clipShape(RoundedRectangle(cornerRadius: 10))
       }
       
       VStack(alignment: .leading, spacing: 0) {
@@ -27,8 +26,17 @@ struct SearchCellView: View {
           .foregroundColor(Theme.gray200)
         
         HStack {
-          Text("Challenge Rating: \(String(item.challengeRating ?? "0"))")
-          Text("Hit Points: \(String(item.hitPoints ?? 0))")
+          Text("Challenge Rating: ")
+            .foregroundColor(Theme.gray400) +
+          Text("\(String(item.challengeRating ?? "0"))")
+            .foregroundColor(Theme.blue600)
+            .bold()
+          
+          Text("Hit Points: ")
+            .foregroundColor(Theme.gray400) +
+          Text("\(String(item.hitPoints ?? 0))")
+            .foregroundColor(Theme.red600)
+            .bold()
         }
         .font(.caption)
         .foregroundColor(Theme.orange600)
@@ -42,7 +50,7 @@ struct SearchCellView: View {
         alignment: .topLeading
       )
     }
-    .background(.black) //Theme.Blue600 to see the content view
+    .background(.black)
     .padding(.vertical, 5)
   }
 }

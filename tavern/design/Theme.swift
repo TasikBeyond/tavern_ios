@@ -13,6 +13,17 @@ struct Theme {
   static let gray900 = Color(hex: "#111827")
   static let gray950 = Color(hex: "#030712")
   
+  static let red600 = Color(hex: "#dc2626")
   static let orange600 = Color(hex: "#EA580C")
   static let blue600 = Color(hex: "#2563EB")
+}
+
+struct SystemIcon {
+  static let downloadPdf = "arrow.down.doc"
+  static let hambergurMenu = "ellipsis.circle"
+  static let viewPdf = "doc.richtext"
+}
+
+struct Animation {
+  static let loadingCircle = "loading-circle"
 }

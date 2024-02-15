@@ -1,5 +1,6 @@
 import SwiftUI
 import ClientApi
+import Kingfisher
 
 struct CreatureDetailsPortraitView: View {
   var creature: CreatureResponseModel
@@ -7,15 +8,11 @@ struct CreatureDetailsPortraitView: View {
   var body: some View {
     VStack {
       if let url = creature.illustrations?.first?.url, let urlString = url.appendingResolution(.medium)?.absoluteString {
-        AsyncImage(url: URL(string: urlString)) { image in
-          image
-            .resizable()
-            .scaledToFit()
-            .frame(maxWidth: .infinity)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-        } placeholder: {
-          ProgressView()
-        }
+        KFImage(URL(string: urlString))
+          .resizable()
+          .scaledToFit()
+          .frame(maxWidth: .infinity)
+          .clipShape(RoundedRectangle(cornerRadius: 10))
       } else {
         Text("No Image Available")
           .frame(maxWidth: .infinity)

@@ -5,35 +5,29 @@ struct SearchView: View {
   @State private var searchText = ""
   
   var body: some View {
-    NavigationView {
-      VStack(spacing: 10) {
-        SearchBar(text: $searchText.onChange(performSearch))
-          .background(Theme.gray950)
-          .padding([.leading, .trailing, .top], 10)
-        
-        List(viewModel.compendiumResults) { item in
-          ZStack {
-            SearchCellView(item: item)
-              .listRowBackground(Color.black)
-              .padding(.horizontal, 4)
-            NavigationLink(destination: LazyView(
-              CreatureDetailsView(viewModel: CreatureDetailsViewModel(content: item)))
-            ) {
-              EmptyView()
-            }
-            .opacity(0)
-            .buttonStyle(PlainButtonStyle())
+    VStack(spacing: 0) {
+      SearchBar(text: $searchText.onChange(performSearch))
+        .background(Theme.gray950)
+        .padding([.leading, .trailing, .top, .bottom], 10)
+      
+      List(viewModel.compendiumResults) { item in
+        ZStack {
+          SearchCellView(item: item)
+            .listRowBackground(Color.black)
+            .padding(.horizontal, 4)
+          NavigationLink(destination: LazyView(
+            CreatureDetailsView(viewModel: CreatureDetailsViewModel(content: item)))
+          ) {
+            EmptyView()
           }
-          .background(.black)
-          .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+          .opacity(0)
+          .buttonStyle(PlainButtonStyle())
         }
+        .background(.black)
+        .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
       }
-      .listStyle(.grouped)
     }
-    .navigationTitle("Search")
-    .toolbarColorScheme(.dark, for: .navigationBar)
-    .toolbarBackground(.visible)
-    .toolbarColorScheme(.dark)
+    .listStyle(.inset)
   }
   
   private func performSearch(for query: String) {

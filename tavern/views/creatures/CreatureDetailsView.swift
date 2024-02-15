@@ -3,6 +3,7 @@ import ClientApi
 
 struct CreatureDetailsView: View {
   @ObservedObject var viewModel: CreatureDetailsViewModel
+  @State var showingPdf: Bool = false
   
   var body: some View {
     ScrollView {
@@ -16,7 +17,7 @@ struct CreatureDetailsView: View {
           CreatureDetailsActionsView(actions: creature.legendaryActions, actionType: "Legendary")
           CreatureDetailsActionsView(actions: creature.reactions, actionType: "Reactions")
         } else {
-          LottieView(animationFileName: "loading-circle", loopMode: .loop)
+          LottieView(animationFileName: Animation.loadingCircle, loopMode: .loop)
             .frame(width: 80, height: 80)
             .background(Color.clear)
             .padding(.vertical, 100)
@@ -24,5 +25,20 @@ struct CreatureDetailsView: View {
       }
     }
     .navigationTitle(viewModel.content.name)
+    .toolbar {
+      ToolbarItem(placement: .navigationBarTrailing) {
+        Menu {
+          Button(action: { showingPdf = true } ) {
+            Label("View PDF", systemImage: SystemIcon.viewPdf)
+          }
+          .padding()
+        } label: {
+          Image(systemName: SystemIcon.hambergurMenu)
+        }
+      }
+    }
+    .sheet(isPresented: $showingPdf) {
+      PdfViewContainer(showingPdf: $showingPdf, title: viewModel.content.name, pdfUrl: viewModel.creaturePdfUrl())
+    }
   }
 }
