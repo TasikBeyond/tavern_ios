@@ -11,13 +11,13 @@
 		6D39A6472B76CC6F004881CB /* CompendiumContentResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A6462B76CC6F004881CB /* CompendiumContentResponseModel.swift */; };
 		6D39A64B2B76CC95004881CB /* IllustrationResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A64A2B76CC95004881CB /* IllustrationResponseModel.swift */; };
 		6D39A64E2B76CEFD004881CB /* CompendiumApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A64D2B76CEFD004881CB /* CompendiumApi.swift */; };
-		6D39A65A2B7ABFE3004881CB /* CompendiumSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A6592B7ABFE3004881CB /* CompendiumSearchRequest.swift */; };
 		6D6EC7382B7C1641009DE49E /* CreatureResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC7372B7C1641009DE49E /* CreatureResponseModel.swift */; };
 		6D6EC73A2B7C16BC009DE49E /* CreatureIdentityResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC7392B7C16BC009DE49E /* CreatureIdentityResponseModel.swift */; };
 		6D6EC73D2B7C174A009DE49E /* CreatureAttributeResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC73C2B7C174A009DE49E /* CreatureAttributeResponseModel.swift */; };
 		6D6EC73F2B7C18CB009DE49E /* CreatureApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC73E2B7C18CB009DE49E /* CreatureApi.swift */; };
 		6D6EC75B2B7D61AB009DE49E /* CreatureMainResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC75A2B7D61AB009DE49E /* CreatureMainResponseModel.swift */; };
 		6D6EC7602B7D6435009DE49E /* CreatureActionResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC75F2B7D6435009DE49E /* CreatureActionResponseModel.swift */; };
+		6D6EC7912B7ECCD9009DE49E /* CompendiumSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC7902B7ECCD9009DE49E /* CompendiumSearchRequest.swift */; };
 		CA1FCECE2466069D00D561CB /* Enum+Pigeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1FCECD2466069D00D561CB /* Enum+Pigeon.swift */; };
 		CAE1A02B24658B0C0047A6B4 /* ClientApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE1A02124658B0C0047A6B4 /* ClientApi.framework */; };
 		CAE1A03024658B0C0047A6B4 /* ClientApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1A02F24658B0C0047A6B4 /* ClientApiTests.swift */; };
@@ -44,13 +44,13 @@
 		6D39A6462B76CC6F004881CB /* CompendiumContentResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompendiumContentResponseModel.swift; sourceTree = "<group>"; };
 		6D39A64A2B76CC95004881CB /* IllustrationResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationResponseModel.swift; sourceTree = "<group>"; };
 		6D39A64D2B76CEFD004881CB /* CompendiumApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompendiumApi.swift; sourceTree = "<group>"; };
-		6D39A6592B7ABFE3004881CB /* CompendiumSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompendiumSearchRequest.swift; sourceTree = "<group>"; };
 		6D6EC7372B7C1641009DE49E /* CreatureResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureResponseModel.swift; sourceTree = "<group>"; };
 		6D6EC7392B7C16BC009DE49E /* CreatureIdentityResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureIdentityResponseModel.swift; sourceTree = "<group>"; };
 		6D6EC73C2B7C174A009DE49E /* CreatureAttributeResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureAttributeResponseModel.swift; sourceTree = "<group>"; };
 		6D6EC73E2B7C18CB009DE49E /* CreatureApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureApi.swift; sourceTree = "<group>"; };
 		6D6EC75A2B7D61AB009DE49E /* CreatureMainResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureMainResponseModel.swift; sourceTree = "<group>"; };
 		6D6EC75F2B7D6435009DE49E /* CreatureActionResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureActionResponseModel.swift; sourceTree = "<group>"; };
+		6D6EC7902B7ECCD9009DE49E /* CompendiumSearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompendiumSearchRequest.swift; path = ClientApi/RequestModels/Compendium/CompendiumSearchRequest.swift; sourceTree = SOURCE_ROOT; };
 		CA1FCECD2466069D00D561CB /* Enum+Pigeon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum+Pigeon.swift"; sourceTree = "<group>"; };
 		CAE1A02124658B0C0047A6B4 /* ClientApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ClientApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE1A02424658B0C0047A6B4 /* ClientApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientApi.h; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		6D39A6582B7ABFCB004881CB /* Compendium */ = {
 			isa = PBXGroup;
 			children = (
-				6D39A6592B7ABFE3004881CB /* CompendiumSearchRequest.swift */,
+				6D6EC7902B7ECCD9009DE49E /* CompendiumSearchRequest.swift */,
 			);
 			path = Compendium;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 				6D39A6452B76CBEF004881CB /* CompendiumSearchResponseModel.swift in Sources */,
 				CAE1A07A246595400047A6B4 /* ApiError.swift in Sources */,
 				6D6EC73F2B7C18CB009DE49E /* CreatureApi.swift in Sources */,
-				6D39A65A2B7ABFE3004881CB /* CompendiumSearchRequest.swift in Sources */,
+				6D6EC7912B7ECCD9009DE49E /* CompendiumSearchRequest.swift in Sources */,
 				CA1FCECE2466069D00D561CB /* Enum+Pigeon.swift in Sources */,
 				6D6EC75B2B7D61AB009DE49E /* CreatureMainResponseModel.swift in Sources */,
 				6D39A64E2B76CEFD004881CB /* CompendiumApi.swift in Sources */,
