@@ -22,3 +22,9 @@ Welcome to the GitHub repository for the Tavern iOS application. Tavern is desig
 - Generate Characters
 - Generate Merchants
 - Join Campaigns!
+
+### Application 
+
+![Creature Details](https://github.com/TasikBeyond/tavern_ios/assets/13050249/8546fcf2-e44a-40b5-8f74-289c1c2b119f)
+![Compendium List](https://github.com/TasikBeyond/tavern_ios/assets/13050249/5c095372-b19d-446f-8728-dbb6e686b78d)
+
