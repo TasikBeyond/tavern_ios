@@ -16,9 +16,22 @@ struct SearchCellView: View {
       }
       
       VStack(alignment: .leading, spacing: 0) {
-        Text(item.name)
-          .font(.headline)
-          .foregroundColor(Theme.gray50)
+        HStack {
+          Text(item.name)
+            .font(.headline)
+            .foregroundColor(Theme.gray50)
+          
+          Spacer()
+          
+          Text(item.edition)
+            .font(.footnote)
+            .padding(.horizontal, 4)
+            .background(Theme.blue600)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+            .padding(.trailing)
+        }
+
         
         Text(item.description)
           .font(.subheadline)

@@ -31,9 +31,11 @@ class CreatureDetailsViewModel: ObservableObject {
   }
   
   public func creaturePdfUrl() -> URL {
-    let host = Pigeon.shared.host ?? "https://tavernofazoth.com"
-    let url = "\(host)/api/creatures/\(content.id)/pdf"
-    return URL(string: url)!;
+    return Pigeon.creatureRoute(route: Pigeon.CreatureRoutes.pdf, creatureId: content.id)
+  }
+  
+  public func creatureWebUrl() -> URL {
+    return Pigeon.creatureRoute(route: Pigeon.CreatureRoutes.web, creatureId: content.id)
   }
 }
 

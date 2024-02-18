@@ -52,6 +52,9 @@
     "No Image Available" : {
 
     },
+    "No Results Found" : {
+
+    },
     "Race: %@" : {
 
     },
@@ -80,6 +83,9 @@
       }
     },
     "View PDF" : {
+
+    },
+    "View Web Version" : {
 
     }
   },

@@ -15,6 +15,11 @@ public struct CompendiumSearchRequest: Codable {
     self.searchQuery = searchQuery
     self.randomize = false
   }
+  
+  public init(randomize: Bool = false) {
+    self.searchQuery = ""
+    self.randomize = randomize
+  }
 }
 
 func convertToDictionary<T: Codable>(_ object: T) -> [String: Any]? {

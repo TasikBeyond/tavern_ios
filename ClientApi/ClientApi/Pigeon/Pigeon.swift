@@ -113,74 +113,74 @@ public class Pigeon {
     file: Data? = nil,
     timeout: Int = Pigeon.timeout,
     success: @escaping Success,
-    failure: @escaping Failure) {
-      
-      guard let request = Pigeon.generateRequest(
-        method: method,
-        endpoint: endpoint,
-        parameters: parameters,
-        pathParameters: pathParameters,
-        file: file,
-        timeout: timeout
-      )
-      else {
-        return fail(error: "Invalid Request", code: 400, failure: failure)
-      }
-      
-      URLSession.shared.dataTask(with: request) { data, response, error in
-        DispatchQueue.main.async {
-          // Gaurd against empty response
-          if let error = error as? NSError {
-            if error.domain == "kCFErrorDomainCFNetwork" {
-              return fail(error: "Unable to establish connection", code: 400, failure: failure)
-            }
-            return fail(error: error.localizedDescription, code: 400, failure: failure)
-          }
-          
-          guard let response = response as? HTTPURLResponse else {
-            return fail(error: String(describing: error), code: 400, failure: failure)
-          }
-          
-          guard let data = data else {
-            return fail(error: String(describing: error), code: 400, failure: failure)
-          }
-          
-          guard error == nil else {
-            return fail(error: String(describing: error), code: 400, failure: failure)
-          }
-          
-          // Inform the client the response has returned as 'Unauthenticated'
-          if response.statusCode == 401 {
-            if let callBack = Pigeon.shared.unauthenticatedCallBack {
-              log("Unauthenticated")
-              callBack()
-            }
-          }
-          
-          // Gaurd against unsuccessful status codes
-          guard response.statusCode >= 200 && response.statusCode < 300 else {
-            do {
-              let errorResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-              
-              guard let message = errorResponse?["message"] as? String else {
-                return fail(error: "Something went wrong", code: response.statusCode, failure: failure)
-              }
-              
-              if let validationIssues = errorResponse?["errors"] as? [String: [String]] {
-                return fail(error: message, code: response.statusCode, validationIssues: validationIssues, failure: failure)
-              }
-              
-              return fail(error: message, code: response.statusCode, failure: failure)
-            } catch {
-              return fail(error: String(describing: error), code: response.statusCode, failure: failure)
-            }
-          }
-          
-          // Return success
-          success(data)
-        }
-      }.resume()
+    failure: @escaping Failure) 
+  {
+    guard let request = Pigeon.generateRequest(
+      method: method,
+      endpoint: endpoint,
+      parameters: parameters,
+      pathParameters: pathParameters,
+      file: file,
+      timeout: timeout
+    )
+    else {
+      return fail(error: "Invalid Request", code: 400, failure: failure)
     }
+    
+    URLSession.shared.dataTask(with: request) { data, response, error in
+      DispatchQueue.main.async {
+        // Gaurd against empty response
+        if let error = error as? NSError {
+          if error.domain == "kCFErrorDomainCFNetwork" {
+            return fail(error: "Unable to establish connection", code: 400, failure: failure)
+          }
+          return fail(error: error.localizedDescription, code: 400, failure: failure)
+        }
+        
+        guard let response = response as? HTTPURLResponse else {
+          return fail(error: String(describing: error), code: 400, failure: failure)
+        }
+        
+        guard let data = data else {
+          return fail(error: String(describing: error), code: 400, failure: failure)
+        }
+        
+        guard error == nil else {
+          return fail(error: String(describing: error), code: 400, failure: failure)
+        }
+        
+        // Inform the client the response has returned as 'Unauthenticated'
+        if response.statusCode == 401 {
+          if let callBack = Pigeon.shared.unauthenticatedCallBack {
+            log("Unauthenticated")
+            callBack()
+          }
+        }
+        
+        // Gaurd against unsuccessful status codes
+        guard response.statusCode >= 200 && response.statusCode < 300 else {
+          do {
+            let errorResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            
+            guard let message = errorResponse?["message"] as? String else {
+              return fail(error: "Something went wrong", code: response.statusCode, failure: failure)
+            }
+            
+            if let validationIssues = errorResponse?["errors"] as? [String: [String]] {
+              return fail(error: message, code: response.statusCode, validationIssues: validationIssues, failure: failure)
+            }
+            
+            return fail(error: message, code: response.statusCode, failure: failure)
+          } catch {
+            return fail(error: String(describing: error), code: response.statusCode, failure: failure)
+          }
+        }
+        
+        // Return success
+        success(data)
+      }
+    }.resume()
+  }
   
   // Convenience method for using the endpoints defined as an Enum
   public static func request(
@@ -191,19 +191,19 @@ public class Pigeon {
     file: Data? = nil,
     timeout: Int = Pigeon.timeout,
     success: @escaping Success,
-    failure: @escaping Failure) {
-      
-      Pigeon.request(
-        method: method,
-        endpoint: endpoint.url(),
-        parameters: parameters,
-        pathParameters: pathParameters,
-        file: file,
-        timeout: timeout,
-        success: success,
-        failure: failure
-      )
-    }
+    failure: @escaping Failure) 
+  {
+    Pigeon.request(
+      method: method,
+      endpoint: endpoint.url(),
+      parameters: parameters,
+      pathParameters: pathParameters,
+      file: file,
+      timeout: timeout,
+      success: success,
+      failure: failure
+    )
+  }
   
   // MARK: - Fail with validation errors
   static func fail(error: String, code: Int, validationIssues: [String: [String]], failure: @escaping Failure) {

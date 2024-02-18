@@ -22,6 +22,7 @@ struct SystemIcon {
   static let downloadPdf = "arrow.down.doc"
   static let hambergurMenu = "ellipsis.circle"
   static let viewPdf = "doc.richtext"
+  static let safari = "safari"
 }
 
 struct Animation {

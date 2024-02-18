@@ -6,7 +6,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     if let sentryDsn = getSentryDsn() {
       SentrySDK.start { options in
         options.dsn = sentryDsn
-        options.debug = true // Enabled to see Sentry log messages
+        options.debug = false
       }
     }
     return true

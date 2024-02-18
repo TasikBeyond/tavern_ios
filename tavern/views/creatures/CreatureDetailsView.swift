@@ -31,6 +31,9 @@ struct CreatureDetailsView: View {
           Button(action: { showingPdf = true } ) {
             Label("View PDF", systemImage: SystemIcon.viewPdf)
           }
+          Button(action: { UIApplication.shared.open(viewModel.creatureWebUrl()) } ) {
+            Label("View Web Version", systemImage: SystemIcon.safari)
+          }
           .padding()
         } label: {
           Image(systemName: SystemIcon.hambergurMenu)
